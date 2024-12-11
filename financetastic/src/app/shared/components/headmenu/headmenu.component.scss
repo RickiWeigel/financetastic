@@ -1,43 +1,58 @@
-@import "./../../../../styles.scss";
+@use "styles" as *;
 
-header{
-    @include dflex($jc: flex-start);
-    height: 78px;
-    padding:0 16px;
-    img{
-        height: 48px;
-    }
+header {
+  border-bottom: 1px solid #e5e9ed;
+
+  @include dflex($jc: flex-start);
+  height: 78px;
+  width: 100%;
+  img {
+    height: 48px;
+  }
+}
+
+section {
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  max-width: 1366px;
+  min-width: 1150px;
 }
 
 nav {
-    display: flex;
-    position: relative;
-  
-    &:hover {
-      .slider {
-        opacity: 1;
-      }
-    }
+  display: flex;
+  position: relative;
 
-    ul {
-      display: flex;
-      gap: 1rem;
-      position: relative;
-      li {
-        list-style: none;
-        a {
-          text-decoration: none;
-          @include dflex();
+  &:hover {
+    .slider {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        @include dflex();
+        color: #7f8fa4;
+        font-size: 18px;
+        cursor: pointer;
+        width: 5.9rem;
+        transition: color 0.3s ease;
+        &:active,
+        &:focus,
+        &:visited {
           color: #7f8fa4;
-          font-size: 18px;
-          cursor: pointer;
-          width: 5.9rem;
-          &:active,
-          &:focus,
-          &:visited {
-            color: #7f8fa4;
-          }
+        }
+        &:hover {
+          color: #354052;
+          font-weight: 500;
         }
       }
     }
   }
+}
