@@ -43,11 +43,11 @@ nav {
         cursor: pointer;
         width: 5.9rem;
         transition: color 0.3s ease;
-        &:active,
         &:focus,
         &:visited {
           color: #7f8fa4;
         }
+        &:active,
         &:hover {
           color: #354052;
           font-weight: 500;
