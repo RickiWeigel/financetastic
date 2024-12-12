@@ -5,10 +5,10 @@
         </a>
         <nav>
             <ul>
-                <li><a routerLink="/summary" routerLinkActive="active">Übersicht</a></li>
-                <li><a routerLink="/accounts" routerLinkActive="active">Konto</a></li>
-                <li><a routerLink="/entries" routerLinkActive="active">Einträge</a></li>
-                <li><a routerLink="/statistics" routerLinkActive="active">Statistik</a></li>
+                <li><a routerLink="/summary" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Übersicht</a></li>
+                <li><a routerLink="/accounts" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Konto</a></li>
+                <li><a routerLink="/entries" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Einträge</a></li>
+                <li><a routerLink="/statistics" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Statistik</a></li>
             </ul>
         </nav>
     </section>

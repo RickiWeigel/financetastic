@@ -2,21 +2,16 @@
 
 header {
   border-bottom: 1px solid #e5e9ed;
-
-  @include dflex($jc: flex-start);
-  height: 78px;
   width: 100%;
   img {
-    height: 48px;
+    height: 36px;
   }
 }
 
 section {
-  padding: 0 16px;
-  margin: 0 auto;
-  display: flex;
-  max-width: 1366px;
-  min-width: 1150px;
+  @include dflex($jc: flex-start);
+  @include auto-margin();
+  padding: 8px 16px;
 }
 
 nav {
@@ -47,9 +42,9 @@ nav {
         &:visited {
           color: #7f8fa4;
         }
-        &:active,
+        &.active,
         &:hover {
-          color: #354052;
+          color: #354052 !important;
           font-weight: 500;
         }
       }

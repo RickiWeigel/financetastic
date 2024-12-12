@@ -18,3 +18,10 @@ body {
   align-items: $ai;
   gap: $g;
 }
+
+@mixin auto-margin(){
+  margin: 0 auto;
+  display: flex;
+  max-width: 1366px;
+  min-width: 1150px;
+}

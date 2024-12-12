@@ -6,10 +6,9 @@ import { StatisticsComponent } from './main-content/statistics/statistics.compon
 
 
 export const routes: Routes = [
-    { path: '', component: SummaryComponent },
+    { path: 'summary', component: SummaryComponent },
     { path: 'accounts', component: AccountsComponent },
     { path: 'entries', component: EntriesComponent },
     { path: 'statistics', component: StatisticsComponent },
     { path: '**', redirectTo: '' } // Fallback-Route
-
 ];
