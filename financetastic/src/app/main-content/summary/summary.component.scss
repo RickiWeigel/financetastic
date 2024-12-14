@@ -1,10 +1,18 @@
 @use "styles" as *;
 
-main {
-  @include dflex($jc: flex-start);
+header {
+  @include dflex($ai: flex-start);
+  flex-direction: column
 }
 
-section {
+main {
+  @include dflex();
+  flex-direction: column;
+  background: #eff0f2;
+  width: 100%;
+}
+
+.btn-section {
   @include auto-margin();
   padding: 32px 16px;
   width: 100%;
@@ -59,4 +67,11 @@ section {
     color: #007aff;
     border-color: #007aff;
   }
+}
+
+app-datepicker{
+  display: flex;
+  width: 100%;
+  max-width: 1366px;
+  min-width: 1150px;
 }
