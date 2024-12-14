@@ -15,12 +15,48 @@ section {
   @include dflex($jc: flex-start, $g: 12px);
 }
 
-.account-btn {
-    cursor: pointer;
-  @include dflex($jc: flex-start, $g: 12px);
+.account-btn,
+.add-account-btn {
+  @include dflex($g: 12px);
+  cursor: pointer;
+  border-radius: 6px;
   padding: 8px;
   width: 100%;
-  height: 40px;
+  height: 100%;
+}
+
+.account-btn {
+  justify-content: flex-start;
   background-color: #004f4f;
-  border-radius: 6px;
+  .left-container,
+  .right-container {
+    @include dflex();
+    color: #fff;
+  }
+  .right-container {
+    flex-direction: column;
+    align-items: flex-start;
+    .account-name {
+      opacity: 0.7;
+      font-weight: 500;
+    }
+    .money {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.add-account-btn {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: transparent;
+  outline: none;
+  border: 2px dashed #e5e9ed;
+  color: #7f8fa4;
+  font-size: 1rem;
+  transition: border-color 0.1s ease, color 0.1s ease;
+  &:hover{
+    color: #007aff;
+    border-color: #007aff;
+  }
 }
