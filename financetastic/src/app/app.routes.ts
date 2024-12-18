@@ -4,11 +4,11 @@ import { AccountsComponent } from './main-content/accounts/accounts.component';
 import { EntriesComponent } from './main-content/entries/entries.component';
 import { StatisticsComponent } from './main-content/statistics/statistics.component';
 
-
 export const routes: Routes = [
-    { path: 'summary', component: SummaryComponent },
-    { path: 'accounts', component: AccountsComponent },
-    { path: 'entries', component: EntriesComponent },
-    { path: 'statistics', component: StatisticsComponent },
-    { path: '**', redirectTo: '' } // Fallback-Route
+  { path: '', redirectTo: 'summary', pathMatch: 'full' },
+  { path: 'summary', component: SummaryComponent },
+  { path: 'accounts', component: AccountsComponent },
+  { path: 'entries', component: EntriesComponent },
+  { path: 'statistics', component: StatisticsComponent },
+  { path: '**', redirectTo: '' }, // Fallback-Route
 ];

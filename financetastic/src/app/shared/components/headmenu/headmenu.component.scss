@@ -1,8 +1,7 @@
 @use "styles" as *;
 
 header {
-  border-bottom: 1px solid #e5e9ed;
-  width: 100%;
+  width: 100%;@include auto-margin();
   img {
     height: 36px;
   }
@@ -10,20 +9,10 @@ header {
 
 section {
   @include dflex($jc: flex-start);
-  @include auto-margin();
   padding: 8px 16px;
 }
 
 nav {
-  display: flex;
-  position: relative;
-
-  &:hover {
-    .slider {
-      opacity: 1;
-    }
-  }
-
   ul {
     display: flex;
     gap: 1rem;

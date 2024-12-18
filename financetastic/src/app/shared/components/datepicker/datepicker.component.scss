@@ -17,11 +17,12 @@ header {
 
 .date-dropdown {
   @include dflex($jc: space-between);
+  cursor: pointer;
   text-align: center;
   background-color: #fff;
   border: 1px solid #ccd2db;
   border-radius: 4px;
-  padding: 6px 14px;
+  padding: 6px 6px 6px 14px;
   width: 210px;
   &:hover {
     svg {
