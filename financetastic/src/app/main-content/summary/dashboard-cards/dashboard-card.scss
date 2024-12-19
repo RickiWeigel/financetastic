@@ -1,0 +1,15 @@
+@use "styles" as *;
+
+.dashboard-card {
+  @include dflex();
+  background-color: #fff;
+  border-radius: 10px;
+  width: 420px;
+  flex-direction: column;
+  padding: 0px 14px 14px 14px;
+}
+
+.dashboard-card-header {
+  width: 100%;
+  border-bottom: 1px solid #eff0f2;
+}
