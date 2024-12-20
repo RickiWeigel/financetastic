@@ -1,8 +1,21 @@
 <div class="dashboard-card">
     <div class="dashboard-card-header">
-        <p>Header Text</p>
+        <p>Konten</p>
     </div>
-    <div class="dashboard-card main">
-        
+    <div class="dashboard-card-main">
+        <section>
+            <div class="left">
+                <mat-icon style="color: white; font-size: 24px;" aria-hidden="hidden"
+                    aria-label="Example wallet icon" fontIcon="account_balance_wallet">
+                </mat-icon>
+                <div class="account-name">
+                    <span>{{accountName}}</span>
+                    <span style="color: #7f8fa4">{{accountType}}</span>
+                </div>
+            </div>
+            <div class="right">
+                <span>{{balance}}</span>
+            </div>
+        </section>
     </div>
 </div>

@@ -80,7 +80,7 @@ app-datepicker {
 }
 
 .dashboard-content {
-  @include dflex($jc: flex-start);
+  @include dflex($jc: flex-start, $g: 14px);
   width: 100%;
   padding: 14px;
   flex-wrap: wrap;

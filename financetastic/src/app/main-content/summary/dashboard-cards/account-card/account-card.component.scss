@@ -1,2 +1,27 @@
 @use "styles" as *;
-@use '../dashboard-card' as cardStyles;
+@use "../dashboard-card" as cardStyles;
+
+.dashboard-card-main {
+    width: 100%;
+  section {
+    @include dflex($jc: space-between);
+    
+    .left {
+        @include dflex($g:14px);
+
+      .mat-icon {
+        @include dflex();
+        background-color: #004f4f;
+        border-radius: 6px;
+        padding: 4px;
+        width: 36px;
+        height: 36px;
+      }
+
+      .account-name {
+        @include dflex($ai: flex-start);
+        flex-direction: column;
+      }
+    }
+  }
+}

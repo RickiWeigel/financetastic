@@ -4,7 +4,7 @@
   @include dflex();
   background-color: #fff;
   border-radius: 10px;
-  width: 420px;
+  width: 436px;
   flex-direction: column;
   padding: 0px 14px 14px 14px;
 }
@@ -12,4 +12,8 @@
 .dashboard-card-header {
   width: 100%;
   border-bottom: 1px solid #eff0f2;
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1;
 }
