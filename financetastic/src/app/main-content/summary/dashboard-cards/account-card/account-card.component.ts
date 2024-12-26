@@ -10,8 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class AccountCardComponent {
 
-  @Input() accountName: string = '';
-  @Input() accountType: string = '';
-  @Input() balance: string = '';
-
+  accountName: string = 'Girokonto';
+  accountType: string = 'Allgemein';
+  balance: string = '1.500';
 }
