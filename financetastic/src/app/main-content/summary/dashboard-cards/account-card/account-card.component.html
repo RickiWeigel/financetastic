@@ -1,12 +1,21 @@
 <div class="dashboard-card">
+    <div class="drag-handler" style="top: 10px; left: calc(50% - 29px); position: absolute; cursor: grab;
+    z-index: 5;">
+        <mat-icon>drag_handle</mat-icon>
+    </div>
+    <div class="card-menu-icon" style="top: 10px; right: 6px; position: absolute; cursor: pointer;
+    z-index: 5;">
+        <mat-icon>more_vert</mat-icon>
+    </div>
     <div class="dashboard-card-header">
-        <p>Konten</p>
+        <span>Konten</span>
+        <div class="mini-button">Konten</div>
     </div>
     <div class="dashboard-card-main">
         <section>
             <div class="left">
-                <mat-icon style="color: white; font-size: 24px;" aria-hidden="hidden"
-                    aria-label="Example wallet icon" fontIcon="account_balance_wallet">
+                <mat-icon style="color: white; font-size: 24px;" aria-hidden="hidden" aria-label="Example wallet icon"
+                    fontIcon="account_balance_wallet">
                 </mat-icon>
                 <div class="account-name">
                     <span>{{accountName}}</span>
@@ -15,6 +24,7 @@
             </div>
             <div class="right">
                 <span>{{balance}}</span>
+                <div class="mini-button"><mat-icon>chevron_right</mat-icon></div>
             </div>
         </section>
     </div>

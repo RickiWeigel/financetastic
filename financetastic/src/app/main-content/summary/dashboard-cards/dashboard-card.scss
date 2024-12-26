@@ -1,19 +1,69 @@
 @use "styles" as *;
 
 .dashboard-card {
-  @include dflex();
+  position: relative;
+  @include dflex($jc:flex-start);
   background-color: #fff;
   border-radius: 10px;
   width: 436px;
+  height: 325px;
   flex-direction: column;
-  padding: 0px 14px 14px 14px;
+  padding: 10px 14px 14px 14px;
+  .drag-handler {
+    mat-icon {
+      font-size: 20px;
+      width: 58px;
+    }
+  }
+  .card-menu-icon{
+    mat-icon {
+      font-size: 18px;
+      &:hover{
+        color: rgb(102, 102, 102);
+      }
+    }
+  }
+}
+
+mat-icon {
+  color: rgb(190, 190, 190);
+  @include dflex();
 }
 
 .dashboard-card-header {
+  position: relative;
+  @include dflex($jc: space-between);
   width: 100%;
+  padding-bottom: 10px;
+  padding-right: 12px;
   border-bottom: 1px solid #eff0f2;
   margin-bottom: 14px;
   font-weight: 700;
   font-size: 15px;
   line-height: 1;
+  .drag-handler {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.mini-button {
+  @include dflex();
+  font-size: 11px;
+  font-weight: 400;
+  padding: 8px 18px;
+  height: 24px;
+  border-radius: 10em;
+  color: grey;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  &:hover {
+    color: rgb(102, 102, 102);
+    background-color: #e1e3e7;
+  }
+  mat-icon {
+    @include dflex();
+    width: 8px;
+    height: 12px;
+  }
 }

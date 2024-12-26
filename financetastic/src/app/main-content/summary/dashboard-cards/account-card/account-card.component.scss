@@ -9,7 +9,7 @@
     .left {
         @include dflex($g:14px);
 
-      .mat-icon {
+      mat-icon {
         @include dflex();
         background-color: #004f4f;
         border-radius: 6px;
@@ -22,6 +22,12 @@
         @include dflex($ai: flex-start);
         flex-direction: column;
       }
+    }
+
+    .right{
+    @include dflex($jc: space-between, $g:12px);
+
+    
     }
   }
 }
